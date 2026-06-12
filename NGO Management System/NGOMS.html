@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Management System</title>
+    <link rel="stylesheet" href="ngos.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <img src="C:\Users\HERBSON\Downloads\ChatGPT Image May 25, 2026, 03_29_00 PM.png" width="220px" height="200px">
+
+        <a href="NGOMS.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="beneficiaries.html">Beneficiaries</a>
+        <a href="programs.html">Programs</a>
+
+        <div class="logout-container">
+            <a href="logout.html" class="logout-link">
+                → Logout
+            </a>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="herosection">
+
+            <section class="leftsection">
+                <h1><i>Welcome to NGO Management System</i></h1>
+
+                <p>
+                    Manage your NGO efficiently with our comprehensive tools and features.
+                </p>
+
+                <p>
+                    We are committed to creating positive change through organized programs, transparent reporting, and strong community support. This platform helps NGOs manage beneficiaries, track donations, monitor projects, and generate reports efficiently in one place.
+                </p>
+
+                <p>
+                    With a simple and user-friendly dashboard, staff and volunteers can access important information, communicate effectively, and keep operations running smoothly. Together, we can make a lasting impact and build a better future for everyone.
+                </p>
+            </section>
+
+            <section class="img-section">
+                <img src="C:\Users\HERBSON\Downloads\Pinterest\ngo img.jpg" alt="NGO volunteers helping the community">
+            </section>
+
+        </div>
+
+        <section class="mission-section">
+
+            <div class="section-header">
+                <h2>Our Mission</h2>
+
+                <p>
+                    Our mission is to empower communities and create positive change through effective management of NGO resources and programs. We strive to make a meaningful impact on the lives of those we serve by providing efficient tools and support for staff and volunteers.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="features-section">
+
+            <h2>Key Features</h2>
+
+            <div class="features-container">
+
+                <div class="feature-card">
+                    <h3>Beneficiary Management</h3>
+                    <p>
+                        Store, update, and manage beneficiary records efficiently.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Program Tracking</h3>
+                    <p>
+                        Monitor NGO projects, activities, and progress in real time.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Donation Management</h3>
+                    <p>
+                        Keep track of donations, sponsors, and financial contributions.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Report Generation</h3>
+                    <p>
+                        Generate detailed reports for transparency and accountability.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="buttonDiv">
+            <button class="btn login-btn" onclick="openLoginModal()">Login</button>
+            <button class="btn signup-btn" onclick="openSignupModal()">Sign Up</button>
+        </div>
+
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+
+            <h2>Login</h2>
+
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+
+                <button type="submit" class="modal-btn">
+                Login
+            </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+
+            <h2>Sign Up</h2>
+
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <button type="submit" class="modal-btn">
+                Create Account
+            </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="ngos.js" defer></script>
+
+</html>

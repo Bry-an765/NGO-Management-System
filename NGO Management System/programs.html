@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - NGO Management System</title>
+    <link rel="stylesheet" href="programs.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <img src="C:\Users\HERBSON\Downloads\ChatGPT Image May 25, 2026, 03_29_00 PM.png" width="220px" height="200px">
+
+        <a href="NGOMS.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="beneficiaries.html">Beneficiaries</a>
+        <a href="programs.html">Programs</a>
+
+
+        <div class="logout-container">
+            <a href="logout.html" class="logout-link">
+                → Logout
+            </a>
+        </div>
+
+    </div>
+
+    <main>
+
+        <div class="page-header">
+            <div>
+                <h1>Programs</h1>
+                <p>Manage and monitor NGO programs and initiatives.</p>
+            </div>
+
+            <button class="add-btn">
+                + Add Program
+            </button>
+        </div>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h3>Total Programs</h3>
+                <h2>12</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>Active Programs</h3>
+                <h2>6</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed Programs</h3>
+                <h2>5</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>Upcoming Programs</h3>
+                <h2>1</h2>
+            </div>
+
+        </div>
+
+        <div class="search-container">
+
+            <select class="filter-select">
+                <option>All Categories</option>
+                <option>Education</option>
+                <option>Healthcare</option>
+                <option>Food Aid</option>
+                <option>Women Empowerment</option>
+            </select>
+
+            <select class="filter-select">
+                <option>All Status</option>
+                <option>Active</option>
+                <option>Completed</option>
+                <option>Upcoming</option>
+            </select>
+
+            <button class="search-btn">
+                Search
+            </button>
+
+        </div>
+
+        <div class="program-grid">
+
+            <div class="program-card">
+
+                <div class="program-status active">
+                    Active
+                </div>
+
+                <h3>Education Support</h3>
+
+                <p>
+                    Providing educational materials and scholarships for underprivileged children.
+                </p>
+
+                <div class="program-info">
+                    <span>👥 120 Beneficiaries</span>
+                    <span>📅 Jan - Dec 2026</span>
+                </div>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+            <div class="program-card">
+
+                <div class="program-status active">
+                    Active
+                </div>
+
+                <h3>Health Awareness</h3>
+
+                <p>
+                    Promoting health education and free community health screenings.
+                </p>
+
+                <div class="program-info">
+                    <span>👥 80 Beneficiaries</span>
+                    <span>📅 Mar - Nov 2026</span>
+                </div>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+            <div class="program-card">
+
+                <div class="program-status completed">
+                    Completed
+                </div>
+
+                <h3>Food Distribution</h3>
+
+                <p>
+                    Providing food assistance to vulnerable households.
+                </p>
+
+                <div class="program-info">
+                    <span>👥 200 Beneficiaries</span>
+                    <span>📅 Jan - Apr 2026</span>
+                </div>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+            <div class="program-card">
+
+                <div class="program-status upcoming">
+                    Upcoming
+                </div>
+
+                <h3>Women Empowerment</h3>
+
+                <p>
+                    Training women with vocational and entrepreneurial skills.
+                </p>
+
+                <div class="program-info">
+                    <span>👥 60 Beneficiaries</span>
+                    <span>📅 Starts July 2026</span>
+                </div>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
