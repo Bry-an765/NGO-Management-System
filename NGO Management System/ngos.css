@@ -1,8 +1,23 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
     background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1100;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 28px;
+    padding: 8px 14px;
+    cursor: pointer;
+    display: none;
 }
 
 
@@ -16,6 +31,9 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    transition: transform 0.3s ease;
+    z-index: 1200;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar img {
@@ -33,6 +51,16 @@ body {
 
 .sidebar a:hover {
     background-color: #444;
+}
+
+.logout-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.logout-link {
+    color: white;
 }
 
 
@@ -76,11 +104,10 @@ main {
 }
 
 .img-section img {
-    padding-top: 9px;
-    margin-left: 4.5px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
     border-radius: 12px;
-    height: 500px;
-    width: 650px;
 }
 
 
@@ -128,7 +155,11 @@ main {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
 }
 
 .feature-card h3 {
@@ -156,6 +187,8 @@ main {
     border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:first-child {
@@ -250,4 +283,82 @@ main {
     padding: 12px 25px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    .herosection {
+        flex-direction: column;
+        text-align: center;
+    }
+    .leftsection h1 {
+        font-size: 36px;
+    }
+    .buttonDiv {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .img-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .leftsection h1 {
+        font-size: 30px;
+    }
+    .leftsection p {
+        font-size: 16px;
+    }
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+    .modal-content {
+        width: 90%;
+    }
+    .buttonDiv {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftsection h1 {
+        font-size: 24px;
+    }
+    .section-header h2,
+    .features-section h2 {
+        font-size: 22px;
+    }
+    .leftsection p {
+        font-size: 15px;
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
